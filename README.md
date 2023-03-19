@@ -1,9 +1,9 @@
 # Site-web
-Réalisation d'un site web dans le cadre de mon cursus pour mettre ne place une base de donnée
+Réalisation d'un site web dans le cadre de mon cursus pour mettre en place une base de donnée.
 
 Ce site web n'a pas pour but d'être mise en ligne: 
-Pour pouvoir l'utiliser assurer vous d'avoir installer PostgreSQL ansi que python3 et les extension suivantes :
-- psycoppg2
+Pour pouvoir l'utiliser assurez-vous d'avoir installé PostgreSQL ansi que Python3 et les extensions suivantes:
+- Psycopg2
 - Flask
 
-Il vou ssuffit just ede lancer le programme main.py et de vous rentre à l'adresse donner l'or du lancement
+Il vous suffit juste de lancer le programme main.py et de vous rentre à l'adresse donné.
