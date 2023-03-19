@@ -1,0 +1,22 @@
+
+<!doctype html>
+<link rel="stylesheet" href="static/csss.css"> 
+<form method="get" action="resultat">
+    <p>
+      Selectionnez une catégorie pour votre recherche :
+      <select name="categorie">
+        {% for categorie in liste_categorie %}
+          <option value="{{ categorie }}">{{ categorie }}</option>
+        {% endfor %}
+      </select>
+  
+      <br><br>
+  
+      Selectionnez un tag :
+      <select name="tag">
+        {% for tag in liste_tag %}
+          <option value="{{ tag }}">{{ tag }}</option>
+        {% endfor %}
+      </select>
+    <p><input type="submit" value="Rechercher">
+  </form>

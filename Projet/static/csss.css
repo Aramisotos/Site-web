@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    color: white;
+    text-shadow: -3px 2px 0 #575757;
+    text-align: center;
+    font-family: "Secular One", "sans-serif";
+}
+
+body {
+    background: rgb(0, 0, 0);
+}
+
+img {
+    display: block;
+    width: 50%;
+    margin: auto;
+    border-radius: 12px;
+}
+
+main {
+    text-align: center;
+    background: rgb(121, 121, 121);
+    width: 100vm;
+    min-height: 100px;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 50px;
+
+}
+
+button {
+    border-radius: 8px;
+    width: 10%;
+    font-weight: 700;
+    font-size: 17px;
+    background-color: orangered;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    box-sizing: border-box;
+    padding: 0 30px;
+    transition: .2s;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+pp {
+    font-size: 19px;
+    color: white;
+    text-shadow: 1px 1px 2px #575757;
+    background-color: rgba(100, 100, 100, 0.3);
+    padding: 7px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 10px;
+    min-height: 20px;
+}
+
+p1 {
+    font-size: 19px;
+    color: white;
+    text-shadow: 1px 1px 2px #575757;
+    background-color: rgba(100, 100, 100, 0.3);
+    padding: 7px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 10px;
+    min-height: 20px;
+    word-spacing: 9rem;
+}
+
+
+p2 {
+    font-size: 19px;
+    color: white;
+} 

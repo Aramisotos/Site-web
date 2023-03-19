@@ -1,0 +1,85 @@
+<!doctype html>
+<link rel="stylesheet" href="static/csss.css"> 
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+
+
+
+</style>
+<title>Page admin</title>
+
+<body>
+  <header>
+      <h1>Tourcoing Events</h1>
+  </header>
+  
+  <p1>
+      <br>
+      <a href="accueil">accueil </a> -
+      <a href="event">evenements </a> -
+      <a href="form_connex">connexion  </a> -
+      <a href="form_inscription"> inscription </a>
+      </br>
+  </p1>
+
+<main>
+ A partir de cette page vous avez accès à l'intégralité des informations sur les événements et personnes incrites.
+<br></br>
+
+ Veuillez sélectionner un champ à supprimer:
+
+<p>
+  <br>
+    <a href="supp_inscription">utilisateur </a>
+    <br></br>
+    <a href="supp_event">evenements </a>
+    <br></br>
+    <a href="supp_tag">tag  </a>
+    <br></br>
+    <a href="supp_cat">catégorie </a>
+  </br>
+</p>
+
+ Veuillez sélectionner un champ à ajouter:
+
+ <p2>
+  <br>
+    <a href="form_inscription">utilisateur </a>
+    <br></br>
+    <a href="insert_event">evenements </a>
+    <br></br>
+    <a href="insert_tag">tag  </a>
+    <br></br>
+    <a href="insert_cat">catégorie </a>
+  </br>
+</p2>
+
+<br>Résumer des events</br>
+
+<p3>
+  <table>
+    <tr>
+      <td>Evenement</td>
+      <td>Nombre de places</td>
+      <td>Nombre d'inscrits</td>
+    </tr>
+    <tr>
+      {% for elem in stat %}
+      <tr><td>{{ elem.nom }}</td><td>{{ elem.nbpersonne }}</td><td>{{ elem.nbinscrit }}</td></tr>
+      {% endfor %}
+    </tr>
+
+</table>
+</p3>
+</main>

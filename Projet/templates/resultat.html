@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Tourcoing Events</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tourcoing Events</h1>
+    </header>
+    
+    <p1>
+        <br>
+        <a href="accueil">accueil </a> -
+        <a href="event">evenements </a> -
+        <a href="form_connex">connexion  </a> -
+        <a href="form_inscription"> inscription </a>
+        </br>
+    </p1>
+
+<body>
+{% for elem in lst_event %}
+     
+<header>
+    <h1>{{elem.nom}}</h1>
+</header>
+<p1>
+<p>{{elem.notice}}</p>
+
+<pp>
+    nombre de places disponibles : {{elem.nbpersonne}} - prix : {{elem.prix}}
+    Vous devez avoir entre {{elem.agemin}} et {{elem.agemax}} ans pour pouvoir vous inscrire à cet évènement.
+</pp>
+
+<img src = "static/{{elem.photo}}" alt = "cpr" width = "600">
+
+{% endfor %}
+</body>
+</p1>
+</html>

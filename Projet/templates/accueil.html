@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Tourcoing Events</title>
+    <link rel="stylesheet" href="static/csss.css"> 
+</head>
+
+<body>
+<header>
+    <h1>Tourcoing Events</h1>
+</header>
+
+<p1>
+    <br>
+    <a href="accueil">accueil </a> -
+    <a href="event">evenements </a> -
+    <a href="form_connex">connexion  </a> -
+    <a href="form_inscription"> inscription </a>
+    </br>
+</p1>
+
+<main>
+    Recherchez un événements parmis notre catalogue
+<form method="get" action="resultat">
+    <p>
+      Selectionnez une catégorie pour votre recherche :
+      <select name="categorie">
+        {% for categorie in lst_cat %}
+          <option value="{{ categorie }}">{{ categorie.nom }}</option>
+        {% endfor %}
+      </select>
+  
+      <br><br>
+  
+      Selectionnez un tag :
+      <select name="tag">
+        {% for tag in lst_tag %}
+          <option value="{{ tag }}">{{ tag.contenu }}</option>
+        {% endfor %}
+      </select>
+    <p><input type="submit" value="Rechercher">
+  </form>
+</main>
+
+<br></br>
+
+<p2> Le top 5 de nos évènements du moment :
+
+      {% for elem in lst_event %}
+          </td><option value="{{ elem }}">{{ elem.nom }}</option>
+          <br></br>
+      {% endfor %}
+
+</p2>
+
+
+</body>
+</html>
