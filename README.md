@@ -6,4 +6,4 @@ Pour pouvoir l'utiliser assurez-vous d'avoir installé PostgreSQL ansi que Pytho
 - Psycopg2
 - Flask
 
-Il vous suffit juste de lancer le programme main.py et de vous rentre à l'adresse donné.
+Il vous suffit juste de lancer le programme main.py et de vous rendre à l'adresse donné.
